@@ -51,6 +51,7 @@ Testes Unitários
 
 Para realizar os testes realizados com TestCase
 
+python manage.py test main.tests.UserTest
 
 Endpoints do projeto
 
