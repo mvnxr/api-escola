@@ -32,15 +32,6 @@ python manage.py makemigrations<br />
 python manage.py migrate<br />_
 
 
-git clone https://github.com/mvnxr/api
-cd projeto_ope_imobiliaria
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
-
 **Criando SuperUser**
 
 python manage.py createsuperuser </br>
@@ -49,6 +40,8 @@ email : admin@api.com</br>
 senha : admin</br>
 confirmar senha: admin</br>
 
+python manage.py drf_create_token admin</br>
+
 #Notas sobre a API
 
 A autenticação desse projeto foi baseada em [TokenAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication) usando um formato de client-server ou seja requisições autenticadas nos endpoints.
@@ -56,9 +49,7 @@ A autenticação desse projeto foi baseada em [TokenAuthentication](https://www.
 
 ##Testes Unitários
 
-Para realizar os testes unitários do projeto, utilize o comando:
-
-<i>python manage.py test user.tests</i>
+Para realizar os testes realizados com TestCase
 
 
 ##**Endpoints** do projeto
@@ -71,11 +62,6 @@ http://127.0.0.1:8000/api/alunos/api/alunos/{ID} - Filtra aluno por ID</br>
 http://127.0.0.1:8000/api/alunos/api/alunos/{ID}/update - Atualiza dados do aluno </br>
 http://127.0.0.1:8000/api/alunos/api/alunos/{ID}/delete - Deleta aluno(ID)
 
-**Outros Endpoints**
-
-http://127.0.0.1:8000/api/turmas - Lista todas as turmas </br>
-http://127.0.0.1:8000/api/turmas/{ID} - Detalha uma turma </br>
-http://127.0.0.1:8000/api/turmas/{ID}/alunos - Lista todos os alunos de uma Turma
 
 ##Limite de Requisições
 
@@ -100,17 +86,9 @@ Requisição POST
                 Header: 'Content-Type' : 'application/json'
                 Authorization: 'Token 67f885ffce9364fc3b6d770c95acfcbabc661db0'
 
-                {
-                    "id": 99,
-                    "username": "teste222",
-                    "first_name": "Nomeaa Teste",
-                    "last_name": "Sobrenome Testxe",
-                    "email": "testeteste_2@gmail.com",
-                    "is_student": false,
-                    "grade":1
-                }
+{
+	"nome":"aluno 111",
+	"is_student": true,
+	"turma": "Fundamental"
+}
 
-
-###Outros endpoints
-
-Crie diferentes Turmas no http://127.0.0.1:8000/admin e associe aos Usuarios utilizando os Endpoints
