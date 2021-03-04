@@ -42,7 +42,7 @@ confirmar senha: admin</br>
 
 python manage.py drf_create_token admin</br>
 
-#Notas sobre a API
+**Notas sobre a API**
 
 A autenticação desse projeto foi baseada em [TokenAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication) usando um formato de client-server ou seja requisições autenticadas nos endpoints.
 
