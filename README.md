@@ -47,12 +47,12 @@ python manage.py drf_create_token admin</br>
 A autenticação desse projeto foi baseada em [TokenAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication) usando um formato de client-server ou seja requisições autenticadas nos endpoints.
 
 
-##Testes Unitários
+##Testes Unitários##
 
 Para realizar os testes realizados com TestCase
 
 
-##**Endpoints** do projeto
+##Endpoints do projeto##
 
 
 
@@ -63,12 +63,12 @@ http://127.0.0.1:8000/api/alunos/api/alunos/{ID}/update - Atualiza dados do alun
 http://127.0.0.1:8000/api/alunos/api/alunos/{ID}/delete - Deleta aluno(ID)
 
 
-##Limite de Requisições
+##Limite de Requisições##
 
 - Usuario não autenticado : 5 Rrequisições por minuto
 - Usuario autenticado : 10 Requisições por minuto
 
-## Paginação
+## Paginação ##
 
 - 3 objetos por página
 
@@ -78,7 +78,7 @@ Para gerar um token entre na url http://127.0.0.1:8000/admin </br>
 com um usuario do tipo superuser, acesse o **APP - Token de Autorização**
 adicione uma chave Token ao seu usuario.
 
-###Criando um aluno
+###Criando um aluno###
 
 Requisição POST
     Endpoint: http://127.0.0.1:8000/api/alunos/create
