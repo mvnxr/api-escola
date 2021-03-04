@@ -86,9 +86,9 @@ Requisição POST
                 Header: 'Content-Type' : 'application/json'
                 Authorization: 'Token 67f885ffce9364fc3b6d770c95acfcbabc661db0'
 
-{
-	"nome":"aluno 111",
-	"is_student": true,
-	"turma": "Fundamental"
-}
+{ </br>
+	"nome":"aluno 111", </br>
+	"is_student": true, </br>
+	"turma": "Fundamental" </br>
+} </br>
 
